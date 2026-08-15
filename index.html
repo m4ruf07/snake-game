@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Snake Game</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='17' r='17' fill='%231b1830'/%3E%3Cpath d='M8 22c2 2 5 2 7 0s5-2 7 0c1.4 1.4 3 1.4 4.4 0' fill='none' stroke='%237fb069' stroke-width='3.4' stroke-linecap='round'/%3E%3Cpath d='M8 22c2 2 5 2 7 0s5-2 7-2c2.4 0 3.6-1.6 3.6-3.4' fill='none' stroke='%235a8a49' stroke-width='3.4' stroke-linecap='round' opacity='0.85'/%3E%3Ccircle cx='26.6' cy='12' r='1.7' fill='%23f4c95d'/%3E%3C/svg%3E">
 <style>
   :root {
     --bg-deep: #1b1830;
@@ -269,6 +270,20 @@
 
 <div id="stage">
   <div class="title-row">
+    <svg id="logo" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="logoGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffe08a" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#ffe08a" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="17" cy="17" r="17" fill="url(#logoGlow)"/>
+      <path d="M8 22c2 2 5 2 7 0s5-2 7 0c1.4 1.4 3 1.4 4.4 0"
+            fill="none" stroke="#7fb069" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M8 22c2 2 5 2 7 0s5-2 7-2c2.4 0 3.6-1.6 3.6-3.4"
+            fill="none" stroke="#5a8a49" stroke-width="3.4" stroke-linecap="round" opacity="0.85"/>
+      <circle cx="26.6" cy="12" r="1.7" fill="#f4c95d"/>
+    </svg>
     <h1>Snake Game</h1>
   </div>
   <div class="subtitle">a firefly hunt</div>
